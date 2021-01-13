@@ -1,16 +1,23 @@
 <html>
 <head>
-    <title>MY Page</title>
-    <link rel="stylesheet" href="style copy.css">
-</htmlpage>
+    <title> Registeration form</title>
+    <link rel="stylesheet" type="text/css" href="style copy.css">
+</head>
 <body>
-  <form>
-    <h1> My Registeration for contest</h1><br>
-    <h2>Name</h2>
-    <input type="text" name="first_name" placeholder="first name">
-    <input type="text" name="second_name" placeholder="second name"><br><br>
-    <label>Age</label><br>
-    <select>
+    <h1>Register for your contest</h1>
+    <div class="reg">
+        <form id="reg" method="post" action="..php">
+            <h2>Register here</h2><br>
+            <label>First name: </label><br>
+            <input type="text" name="name" placeholder="first name" id="name"><br><br>
+            <label>last name: </label><br>
+            <input type="text" name="name" placeholder="last name" id="name"><br><br>
+            <label>Email: </label><br>
+            <input type="email" name="email" placeholder="Enter your email here" id="name"><br><br>
+            <label>Mobile number: </label><br>
+            <input type="number" name="number" placeholder="Enter your number" id="name"><br><br>
+            <label>Age</label><br>
+<select>
         <option>select your age</option>
         <option>17</option>
         <option>18</option>
@@ -26,26 +33,25 @@
         <option>28</option>
         <option>29</option>
         <option>30</option><br>
-    </select>
-    <h3>Email id</h3>
-    <input type="mail" name="mail" placeholder="Email id"><br>
-    <h4>phone number</h4>
-    <input type="number" name="number" placeholder="Mobile Number">
-    <h5>Category</h5>
-    <input type="radio" id="radio" name="radio">western singing<br>
-    <input type="radio" id="radio" name="radio">bollywood singing<br>
-    <input type="radio" id="radio" name="radio">band music<br>
-    <input type="radio" id="radio" name="radio">opera<br>
-    <h6>DATE of BIRTH</h6><br>
-    <input type="date" name="date" id="name" placeholder="DOB" cols="1"><br>
-    <label>Did you participate in other competitions</label><br>
-    <input type="checkbox">yes<br>
-    <input type="checkbox">no<br>
-    <label>Address</label><br>
-    <textarea rows="10" cols="40" placeholder="Enter your text here"> </textarea><br><br>
-    <label></label>
-    <button type="submit">submit</button>
-   </form>
-</body>
-</html>
+</select><br><br>
 
+            <label>Date of Birth: </label><br>
+            <input type="date" name="date" placeholder="Date" id="name"><br><br>
+            <label>category</label><br>
+            <input type="radio" id="radio" name="radio"><span>Western singing</span><br>
+            <input type="radio" id="radio" name="radio"><span>Bollywood singing</span><br>
+            <input type="radio" id="radio" name="radio"><span>Band music</span><br>
+            <input type="radio" id="radio" name="radio"><span>Opera</span><br><br>
+            <label>Did you participate in other competitions</label><br>
+            <input type="checkbox" id="ma"><span id="ma"></span>Yes<br>
+            <input type="checkbox" id="ma"><span id="ma">No</span><br><br>   
+            <label>Gender: </label><br>
+            <input type="radio" id="ma"><span id="ma">Male</span>
+            <input type="radio" id="ma"><span id="ma">Female</span><br><br>
+            <input type="checkbox" id="ch"><span id="ch">I Agree for all terms and conditions.</span><br><br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+    </div>
+
+</body>
